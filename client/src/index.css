@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 16 100% 50%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 262 80% 63%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+  --radius: 0.5rem;
+  
+  --chart-1: 207 90% 54%; /* primary */
+  --chart-2: 16 100% 50%; /* secondary */
+  --chart-3: 262 80% 63%; /* accent */
+  --chart-4: 334 85% 45%; /* additional chart color */
+  --chart-5: 151 60% 45%; /* additional chart color */
+
+  --sidebar-background: 0 0% 100%;
+  --sidebar-foreground: 222.2 84% 4.9%;
+  --sidebar-primary: 207 90% 54%;
+  --sidebar-primary-foreground: 210 40% 98%;
+  --sidebar-accent: 262 80% 63%;
+  --sidebar-accent-foreground: 210 40% 98%;
+  --sidebar-border: 214.3 31.8% 91.4%;
+  --sidebar-ring: 222.2 84% 4.9%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 210 40% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 16 100% 50%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 262 80% 63%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 212.7 26.8% 83.9%;
+
+  --sidebar-background: 240 10% 3.9%;
+  --sidebar-foreground: 210 40% 98%;
+  --sidebar-primary: 207 90% 54%;
+  --sidebar-primary-foreground: 210 40% 98%;
+  --sidebar-accent: 262 80% 63%;
+  --sidebar-accent-foreground: 210 40% 98%;
+  --sidebar-border: 217.2 32.6% 17.5%;
+  --sidebar-ring: 212.7 26.8% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200 transition-colors duration-300;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+  section {
+    @apply py-20;
+  }
+}
+
+@layer utilities {
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold mb-4 text-center;
+  }
+  .section-divider {
+    @apply w-20 h-1 bg-primary mx-auto;
+  }
+  .section-description {
+    @apply mt-4 max-w-2xl mx-auto text-slate-600 dark:text-slate-400 text-center;
+  }
+}
+
+@layer components {
+  .skill-bg-tech {
+    @apply bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300;
+  }
+  .skill-bg-framework {
+    @apply bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300;
+  }
+  .skill-bg-language {
+    @apply bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300;
+  }
+  .skill-bg-tool {
+    @apply bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300;
+  }
+  .skill-badge {
+    @apply px-2 py-1 rounded text-xs inline-block;
+  }
+}
