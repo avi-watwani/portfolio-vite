@@ -6,10 +6,11 @@ export default function Hero() {
   const scrollToSection = (sectionId: string) => {
     const element = document.querySelector(sectionId);
     if (element) {
-      const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 80;
+      const offsetTop =
+        element.getBoundingClientRect().top + window.pageYOffset - 80;
       window.scrollTo({
         top: offsetTop,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
   };
@@ -18,7 +19,7 @@ export default function Hero() {
     <section id="home" className="min-h-screen flex items-center pt-20">
       <div className="container mx-auto px-6 py-16 md:py-24">
         <div className="flex flex-col md:flex-row items-center">
-          <motion.div 
+          <motion.div
             className="md:w-1/2 mb-12 md:mb-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -31,20 +32,22 @@ export default function Hero() {
               Software Development Engineer
             </h2>
             <p className="text-lg mb-8 max-w-lg">
-              I build robust web applications with modern technologies.
-              AWS Certified Developer with expertise in both frontend and backend development.
+              Experienced in building robust, scalable web applications using Ruby on Rails, Node.js and Next.js. I specialize in developing full-stack solutions with a strong focus on performance and maintainability.
+            </p>
+            <p className="text-lg mb-8 max-w-lg">
+              AWS Certified Developer – Associate, with hands-on experience in designing and deploying secure, cloud-native applications using AWS services.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-primary text-white hover:bg-blue-600 px-6"
                 onClick={() => scrollToSection("#projects")}
               >
                 View My Work
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
+              <Button
+                variant="outline"
+                size="lg"
                 className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6"
                 onClick={() => scrollToSection("#contact")}
               >
@@ -52,25 +55,25 @@ export default function Hero() {
               </Button>
             </div>
             <div className="flex mt-8 space-x-4">
-              <a 
-                href="https://github.com" 
-                target="_blank" 
+              <a
+                href="https://github.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors"
               >
                 <FaGithub className="text-2xl" />
               </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
+              <a
+                href="https://linkedin.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors"
               >
                 <FaLinkedin className="text-2xl" />
               </a>
-              <a 
-                href="https://twitter.com" 
-                target="_blank" 
+              <a
+                href="https://twitter.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors"
               >
@@ -78,8 +81,8 @@ export default function Hero() {
               </a>
             </div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="md:w-1/2 flex justify-center"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -90,8 +93,19 @@ export default function Hero() {
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-primary/30 p-2 relative">
                 <div className="absolute -top-4 -right-4 bg-secondary text-white p-2 rounded-lg shadow-lg z-10">
                   <span className="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 mr-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                      />
                     </svg>
                     AWS Certified
                   </span>
