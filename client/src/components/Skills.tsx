@@ -21,8 +21,8 @@ export default function Skills() {
       bgColor: "bg-secondary/10",
       skills: [
         { name: "Next.js", level: "Advanced" },
-        { name: "React.js", level: "Familiar" },
-        { name: "JavaScript/ TypeScript", level: "Advanced" }
+        { name: "JavaScript/ TypeScript", level: "Advanced" },
+        { name: "React.js", level: "Familiar" }
       ]
     },
     {
