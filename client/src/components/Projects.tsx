@@ -19,8 +19,7 @@ export default function Projects() {
       skills: [
         { name: "AWS Lambda", type: "tech" },
         { name: "DynamoDB", type: "tech" },
-        { name: "API Gateway", type: "tech" },
-        { name: "Route 53", type: "tech" }
+        { name: "API Gateway", type: "tech" }
       ],
       links: {
         live: "https://itsurl.com"
@@ -60,12 +59,11 @@ export default function Projects() {
       ),
       skills: [
         { name: "React.js", type: "framework" },
-        { name: "Node.js", type: "language" },
-        { name: "PostgreSQL", type: "tech" },
-        { name: "Authentication", type: "tech" }
+        { name: "Ruby on Rails", type: "language" },
+        { name: "PostgreSQL", type: "tech" }
       ],
       links: {
-        github: "https://github.com"
+        github: "https://github.com/avi-watwani"
       }
     }
   ];
@@ -105,7 +103,7 @@ export default function Projects() {
           <Button 
             size="lg" 
             className="bg-primary text-white hover:bg-blue-600 inline-flex items-center"
-            onClick={() => window.open("https://github.com", "_blank")}
+            onClick={() => window.open("https://github.com/avi-watwani", "_blank")}
           >
             <FaCodeBranch className="mr-2" />
             View More Projects on GitHub

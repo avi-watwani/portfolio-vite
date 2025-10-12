@@ -22,29 +22,15 @@ export default function About() {
             <div className="bg-white dark:bg-slate-800 rounded-xl shadow-xl p-8 transform transition duration-500 hover:scale-105">
               <h3 className="text-2xl font-bold mb-4">My Journey</h3>
               <p className="mb-4">
-                I'm a passionate Software Engineer with over 3 years of experience building scalable and efficient web applications. Ex - Software Engineer at HowNow Technologies Pvt. Ltd., where I contribute to developing innovative learning solutions and backend services.
-              </p>
+                It began over three years ago at an e-learning startup, HowNow Technologies, where I dove headfirst into the world of backend development. What started as curiosity soon became passion for building systems that power real learning experiences.              </p>
               <p className="mb-6">
-                My expertise spans across backend development, with a strong foundation in Ruby on Rails, Node.js, Python, and cloud technologies. I'm dedicated to writing clean, maintainable code and staying up-to-date with the latest industry trends, particularly in AWS services and containerization.
-              </p>
-              <div className="flex items-center">
-                <svg 
-                  className="h-16 mr-4 text-primary" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeWidth="2" />
-                  <path d="M15 9L9 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M9 9L15 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                <div>
-                  <h4 className="font-medium text-lg">AWS Certified Developer</h4>
-                  <p className="text-slate-600 dark:text-slate-400">Associate Level</p>
-                </div>
-              </div>
+                Through countless lines of code and late-night debugging, I grew into a developer who loves solving problems and shaping ideas into scalable, reliable systems. Along the way, I've built a strong foundation in Ruby on Rails, Node.js, Python, MySQL, MongoDB, and AWS, and discovered that growth isn't just about writing better code, it's about learning, unlearning, and building with purpose.              </p>
               <div className="mt-6">
-                <Button variant="link" className="text-primary font-medium hover:underline p-0">
+                <a 
+                  href="/Avi-Watwani-Resume.pdf" 
+                  download="Avi-Watwani-Resume.pdf"
+                  className="inline-flex items-center text-primary font-medium hover:underline p-0"
+                >
                   <svg 
                     className="h-5 w-5 mr-2" 
                     fill="none" 
@@ -60,7 +46,7 @@ export default function About() {
                     />
                   </svg>
                   Download Resume
-                </Button>
+                </a>
               </div>
             </div>
           </motion.div>

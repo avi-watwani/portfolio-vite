@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
           <div className="flex space-x-6">
             <a 
-              href="https://github.com" 
+              href="https://github.com/avi-watwani" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-slate-400 hover:text-white transition-colors"
@@ -29,7 +29,7 @@ export default function Footer() {
               <FaGithub className="text-xl" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://linkedin.com/in/avi-watwani" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-slate-400 hover:text-white transition-colors"
@@ -45,7 +45,7 @@ export default function Footer() {
               <FaTwitter className="text-xl" />
             </a>
             <a 
-              href="mailto:contact@aviwatwani.com" 
+              href="mailto:avi.watwani@gmail.com" 
               className="text-slate-400 hover:text-white transition-colors"
             >
               <FaEnvelope className="text-xl" />

@@ -77,30 +77,28 @@ export default function Experience() {
               <div className="bg-white dark:bg-slate-800 rounded-xl shadow-xl p-6 md:p-8">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <h3 className="text-xl md:text-2xl font-bold">B.E. Computer Engineering</h3>
+                  <div className="flex items-center mt-2 md:mt-0">
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
+                      2017 - 2021 | CGPA - 8.10
+                    </span>
+                  </div>
                 </div>
-                <div className="flex flex-col md:flex-row md:items-center text-slate-600 dark:text-slate-400 mb-6">
-                  <div className="flex items-center mb-2 md:mb-0">
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      className="h-4 w-4 mr-2" 
-                      fill="none" 
-                      viewBox="0 0 24 24" 
-                      stroke="currentColor"
-                    >
-                      <path 
-                        strokeLinecap="round" 
-                        strokeLinejoin="round" 
-                        strokeWidth={2} 
-                        d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" 
-                      />
-                    </svg>
-                    <span className="font-medium">Vivekanand Education Society's Institute of Technology, Chembur, Mumbai</span>
-                  </div>
-                  <span className="hidden md:block mx-3">•</span>
-                  <div className="flex items-center">
-                    <CalendarIcon className="mr-2 h-4 w-4" />
-                    <span>2017 - 2021 | CGPA - 8.10</span>
-                  </div>
+                <div className="flex items-center text-slate-600 dark:text-slate-400 mb-6">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    className="h-4 w-4 mr-2" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" 
+                    />
+                  </svg>
+                  <span className="font-medium">Vivekanand Education Society's Institute of Technology, Chembur, Mumbai</span>
                 </div>
                 <p className="text-slate-700 dark:text-slate-300">
                   Graduated with a Bachelor's degree in Computer Engineering with a CGPA of 8.10. Focused on algorithms, data structures, software engineering principles, and modern web technologies.

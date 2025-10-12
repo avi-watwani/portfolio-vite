@@ -51,7 +51,7 @@ export default function ProjectCard({
           ))}
         </div>
         <div className="flex space-x-4">
-          {links.github && (
+          {links?.github && (
             <a 
               href={links.github} 
               target="_blank" 
@@ -61,7 +61,7 @@ export default function ProjectCard({
               <FaGithub className="mr-1" /> Code
             </a>
           )}
-          {links.live && (
+          {links?.live && (
             <a 
               href={links.live} 
               target="_blank" 
