@@ -32,6 +32,7 @@ export default function Skills() {
       bgColor: "bg-accent/10", 
       skills: [
         { name: "AWS Services", level: "Advanced" },
+        { name: "GitHub Actions", level: "Advanced" },
         { name: "Docker", level: "Familiar" },
         { name: "Kubernetes", level: "Familiar" }
       ]
