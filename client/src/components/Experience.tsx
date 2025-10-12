@@ -56,7 +56,7 @@ export default function Experience() {
                   <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">MySQL</span>
                   <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">MongoDB</span>
                   <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">GraphQL</span>
-                  <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">AWS</span>
+                  <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">GitHub Actions</span>
                   <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">Mixpanel</span>
                 </div>
               </div>
