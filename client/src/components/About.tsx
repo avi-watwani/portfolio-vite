@@ -22,10 +22,10 @@ export default function About() {
             <div className="bg-white dark:bg-slate-800 rounded-xl shadow-xl p-8 transform transition duration-500 hover:scale-105">
               <h3 className="text-2xl font-bold mb-4">My Journey</h3>
               <p className="mb-4">
-                I'm a passionate Software Engineer with nearly 3 years of experience building scalable and efficient web applications. Currently working as a Software Development Engineer at HowNow, where I contribute to developing innovative learning solutions.
+                I'm a passionate Software Engineer with over 3 years of experience building scalable and efficient web applications. Ex - Software Engineer at HowNow Technologies Pvt. Ltd., where I contribute to developing innovative learning solutions and backend services.
               </p>
               <p className="mb-6">
-                My expertise spans across full-stack development, with a strong foundation in both frontend and backend technologies. I'm dedicated to writing clean, maintainable code and staying up-to-date with the latest industry trends.
+                My expertise spans across backend development, with a strong foundation in Ruby on Rails, Node.js, Python, and cloud technologies. I'm dedicated to writing clean, maintainable code and staying up-to-date with the latest industry trends, particularly in AWS services and containerization.
               </p>
               <div className="flex items-center">
                 <svg 
@@ -76,9 +76,9 @@ export default function About() {
               <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg">
                 <h3 className="text-xl font-bold mb-3 flex items-center">
                   <LaptopIcon className="text-primary mr-2" />
-                  Technical Expertise
+                  Backend Expertise
                 </h3>
-                <p>Full-stack developer with a passion for creating scalable and efficient web applications. Skilled in both frontend and backend technologies.</p>
+                <p>Backend developer with a passion for creating scalable and efficient web applications. Skilled in Ruby on Rails, Node.js, Python, and cloud technologies.</p>
               </div>
               
               <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg">

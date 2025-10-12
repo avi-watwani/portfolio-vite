@@ -32,8 +32,8 @@ export default function ContactInfo() {
           </div>
           <div>
             <h4 className="font-medium mb-1">Email</h4>
-            <a href="mailto:avi.watwani.work@outlook.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-              avi.watwani.work@outlook.com
+            <a href="mailto:avi.watwani@gmail.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+              avi.watwani@gmail.com
             </a>
           </div>
         </div>

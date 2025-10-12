@@ -29,10 +29,10 @@ export default function Skills() {
               Backend Development
             </h3>
             <div className="space-y-5">
-              <SkillBar name="Ruby on Rails" percentage={90} />
-              <SkillBar name="Node.js" percentage={85} />
-              <SkillBar name="Python" percentage={80} />
-              <SkillBar name="Java" percentage={75} />
+              <SkillBar name="Ruby on Rails" percentage={95} />
+              <SkillBar name="Node.js" percentage={90} />
+              <SkillBar name="Python" percentage={85} />
+              <SkillBar name="MongoDB" percentage={85} />
             </div>
           </motion.div>
           
@@ -93,9 +93,9 @@ export default function Skills() {
             </h3>
             <div className="space-y-5">
               <SkillBar name="PostgreSQL" percentage={85} />
-              <SkillBar name="MongoDB" percentage={80} />
               <SkillBar name="Redis" percentage={75} />
               <SkillBar name="Git/GitHub" percentage={90} />
+              <SkillBar name="RESTful APIs" percentage={90} />
             </div>
           </motion.div>
         </div>
