@@ -61,10 +61,7 @@ export default function Projects() {
         { name: "React.js", type: "framework" },
         { name: "Ruby on Rails", type: "language" },
         { name: "PostgreSQL", type: "tech" }
-      ],
-      links: {
-        github: "https://github.com/avi-watwani"
-      }
+      ]
     }
   ];
 
