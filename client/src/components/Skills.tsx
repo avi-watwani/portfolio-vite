@@ -11,6 +11,7 @@ export default function Skills() {
       skills: [
         { name: "Ruby on Rails", level: "Expert" },
         { name: "Node.js", level: "Advanced" },
+        { name: "NestJS", level: "Advanced" },
         { name: "Python", level: "Advanced" }
       ]
     },
@@ -45,8 +46,10 @@ export default function Skills() {
       skills: [
         { name: "MySQL", level: "Expert" },
         { name: "MongoDB", level: "Advanced" },
+        { name: "Firebase", level: "Advanced" },
         { name: "PostgreSQL", level: "Advanced" },
-        { name: "GraphQL", level: "Familiar" }
+        { name: "GraphQL", level: "Familiar" },
+        { name: "SupabaseDB", level: "Familiar" },
       ]
     }
   ];
@@ -92,7 +95,7 @@ export default function Skills() {
                 <h3 className="text-xl font-bold">{category.title}</h3>
               </div>
               
-              <div className="space-y-4">
+              <div className="space-y-4 max-h-[240px] overflow-y-auto pr-2 custom-scrollbar">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.div
                     key={skill.name}
