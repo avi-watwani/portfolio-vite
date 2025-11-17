@@ -9,8 +9,8 @@ export default function Skills() {
       iconColor: "text-primary",
       bgColor: "bg-primary/10",
       skills: [
+        { name: "Node.js", level: "Expert" },
         { name: "Ruby on Rails", level: "Expert" },
-        { name: "Node.js", level: "Advanced" },
         { name: "NestJS", level: "Advanced" },
         { name: "Python", level: "Advanced" }
       ]
@@ -22,7 +22,7 @@ export default function Skills() {
       bgColor: "bg-secondary/10",
       skills: [
         { name: "Next.js", level: "Advanced" },
-        { name: "JavaScript/ TypeScript", level: "Advanced" },
+        { name: "JavaScript / TypeScript", level: "Advanced" },
         { name: "React.js", level: "Familiar" }
       ]
     },

@@ -32,7 +32,7 @@ export default function Hero() {
               Software Engineer | AWS Certified Developer
             </h2>
             <p className="text-lg mb-8 max-w-xl">
-              Backend Software Engineer with expertise in Ruby on Rails, Node.js, Python, and MongoDB. Passionate about building scalable, high-performance web applications.
+              Software Engineer with expertise in Node.js, Next.js, NestJS, and SupabaseDB. Passionate about building scalable, high-performance web applications.
             </p>
             <p className="text-lg mb-8 max-w-xl">
               Skilled in RESTful APIs, database optimization, and cloud solutions. Ex - Software Engineer at HowNow Technologies Pvt. Ltd.
