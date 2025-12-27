@@ -6,8 +6,19 @@ export default function Hero() {
   const scrollToSection = (sectionId: string) => {
     const element = document.querySelector(sectionId);
     if (element) {
+      // Keep consistent with header navigation behavior: account for the header height and
+      // section padding-top, while leaving a small intentional gap below the header.
+      const headerEl = document.querySelector("header");
+      const headerHeight = headerEl?.getBoundingClientRect().height ?? 0;
+      const sectionPaddingTop =
+        Number.parseFloat(getComputedStyle(element).paddingTop) || 0;
+      const DESIRED_GAP_PX = 24;
+      const scrollOffset = Math.max(
+        0,
+        headerHeight + DESIRED_GAP_PX - sectionPaddingTop,
+      );
       const offsetTop =
-        element.getBoundingClientRect().top + window.pageYOffset - 80;
+        element.getBoundingClientRect().top + window.pageYOffset - scrollOffset;
       window.scrollTo({
         top: offsetTop,
         behavior: "smooth",
@@ -31,11 +42,11 @@ export default function Hero() {
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-slate-600 dark:text-slate-400">
               Software Engineer | AWS Certified Developer
             </h2>
-            <p className="text-lg mb-8 max-w-xl">
-              Software Engineer with expertise in Node.js, Next.js, NestJS, and SupabaseDB. Passionate about building scalable, high-performance web applications.
+            <p className="text-lg mb-8 max-w-2xl">
+              Software Engineer with a strong product startup background, expertise in Node.js, Next.js, NestJS, and Supabase. Passionate about building scalable and high-performance web applications.
             </p>
-            <p className="text-lg mb-8 max-w-xl">
-              Skilled in RESTful APIs, database optimization, and cloud solutions. Ex - Software Engineer at HowNow Technologies Pvt. Ltd.
+            <p className="text-lg mb-8 max-w-2xl">
+              Skilled in RESTful APIs, database optimization, cloud solutions and developing GenAI-driven product features, including LLM integrations, with a focus on performance, reliability, and user experience.
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-8">
               <div className="flex gap-4">

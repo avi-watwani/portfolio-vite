@@ -43,12 +43,24 @@ export default function Experience() {
                   </div>
                 </div>
                 <ul className="space-y-2 ml-6 list-disc text-slate-700 dark:text-slate-300">
-                  <li>Engineered and optimized RESTful APIs and backend services to support core product features and ensure seamless frontend integration</li>
-                  <li>Collaborated across teams to develop and deploy new features, ensuring seamless integration with backend services</li>
-                  <li>Architected and led the implementation of a comprehensive event-tracking and analytics solution with Mixpanel, enabling data-driven decision-making by identifying user behavior patterns</li>
-                  <li>Built reusable backend utilities and middleware to enforce code consistency and accelerate development cycles</li>
-                  <li>Led bug-fixing initiatives, ensuring timely resolution of issues to maintain application stability</li>
-                  <li>Developed efficient data ingestion pipelines from third-party providers, enhancing data quality and streamlining monthly seeding operations</li>
+                  <li>
+                    Engineered and optimized RESTful APIs, reducing average response times by 20% and improving backend–frontend integration across core product features
+                  </li>
+                  <li>
+                    Architected and led a Mixpanel-based event tracking and analytics solution, enabling data-driven decisions and improving feature adoption by 35% through user behavior insights
+                  </li>
+                  <li>
+                    Built reusable middleware modules and backend utilities, reducing development effort by 30% and enforcing code consistency
+                  </li>
+                  <li>
+                    Integrated Gemini LLM APIs into backend services to power AI-driven features, handling prompt design, response validation, retries, and error handling
+                  </li>
+                  <li>
+                    Built a Retrieval-Augmented Generation (RAG) pipeline using embeddings and vector search to generate grounded responses with source attribution, reducing hallucinations
+                  </li>
+                  <li>
+                    Built high-throughput data ingestion pipelines for third-party providers, improving data accuracy by 70% while reducing manual intervention to near zero
+                  </li>
                 </ul>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">Ruby on Rails</span>
@@ -56,6 +68,7 @@ export default function Experience() {
                   <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">MySQL</span>
                   <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">MongoDB</span>
                   <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">GraphQL</span>
+                  <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">Gen AI</span>
                   <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">GitHub Actions</span>
                   <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">Mixpanel</span>
                 </div>

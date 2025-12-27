@@ -10,9 +10,13 @@ export default function Skills() {
       bgColor: "bg-primary/10",
       skills: [
         { name: "Node.js", level: "Expert" },
+        { name: "Express.js", level: "Expert" },
         { name: "Ruby on Rails", level: "Expert" },
+        { name: "AI / LLM Integration", level: "Expert" },
         { name: "NestJS", level: "Advanced" },
-        { name: "Python", level: "Advanced" }
+        { name: "Python (Django)", level: "Advanced" },
+        { name: "PHP (Laravel, CodeIgniter)", level: "Advanced" },
+        { name: "RAG Pipelines", level: "Advanced" }
       ]
     },
     {
@@ -34,8 +38,9 @@ export default function Skills() {
       skills: [
         { name: "AWS Services", level: "Advanced" },
         { name: "GitHub Actions", level: "Advanced" },
-        { name: "Docker", level: "Familiar" },
-        { name: "Kubernetes", level: "Familiar" }
+        { name: "Docker", level: "Advanced" },
+        { name: "Kubernetes", level: "Advanced" },
+        { name: "n8n Workflows", level: "Familiar" }
       ]
     },
     {
@@ -48,7 +53,7 @@ export default function Skills() {
         { name: "MongoDB", level: "Advanced" },
         { name: "Firebase", level: "Advanced" },
         { name: "PostgreSQL", level: "Advanced" },
-        { name: "GraphQL", level: "Familiar" },
+        { name: "GraphQL", level: "Advanced" },
         { name: "SupabaseDB", level: "Familiar" },
       ]
     }

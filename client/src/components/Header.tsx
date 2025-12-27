@@ -39,7 +39,23 @@ export default function Header() {
     setMobileMenuOpen(false);
     const element = document.querySelector(sectionId);
     if (element) {
-      const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 80;
+      // Sections already have top padding (e.g. `py-20` / `pt-20`), so subtracting a fixed
+      // header offset can create either too much or too little gap depending on layout.
+      // We compute a dynamic offset that:
+      // - accounts for the actual header height
+      // - accounts for the section's own padding-top
+      // - leaves a small intentional gap below the header
+      const headerEl = document.querySelector("header");
+      const headerHeight = headerEl?.getBoundingClientRect().height ?? 0;
+      const sectionPaddingTop =
+        Number.parseFloat(getComputedStyle(element).paddingTop) || 0;
+      const DESIRED_GAP_PX = 24;
+      const scrollOffset = Math.max(
+        0,
+        headerHeight + DESIRED_GAP_PX - sectionPaddingTop,
+      );
+      const offsetTop =
+        element.getBoundingClientRect().top + window.pageYOffset - scrollOffset;
       window.scrollTo({
         top: offsetTop,
         behavior: "smooth"
