@@ -108,7 +108,6 @@
     "bufferutil": "^4.0.8"
   },
   "overrides": {
-    "@types/node": "^20.0.0",
-    "esbuild": "0.25.12"
+    "@types/node": "^20.0.0"
   }
 }
