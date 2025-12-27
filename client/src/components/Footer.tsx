@@ -1,4 +1,5 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { ArrowUpIcon } from "lucide-react";
 
 export default function Footer() {
@@ -25,6 +26,7 @@ export default function Footer() {
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-slate-400 hover:text-white transition-colors"
+              title="GitHub"
             >
               <FaGithub className="text-xl" />
             </a>
@@ -33,20 +35,23 @@ export default function Footer() {
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-slate-400 hover:text-white transition-colors"
+              title="LinkedIn"
             >
               <FaLinkedin className="text-xl" />
             </a>
             <a 
-              href="https://twitter.com" 
+              href="https://x.com/AviWatwani" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-slate-400 hover:text-white transition-colors"
+              title="X (Twitter)"
             >
-              <FaTwitter className="text-xl" />
+              <FaXTwitter className="text-xl" />
             </a>
             <a 
               href="mailto:avi.watwani@gmail.com" 
               className="text-slate-400 hover:text-white transition-colors"
+              title="Email"
             >
               <FaEnvelope className="text-xl" />
             </a>

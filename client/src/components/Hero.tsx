@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
