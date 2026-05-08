@@ -1,9 +1,21 @@
 import type { Express, Request, Response } from "express";
 import { createServer, type Server } from "http";
+import fs from "fs";
+import path from "path";
 import { storage } from "./storage";
 import { insertMessageSchema } from "@shared/schema";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  app.get("/downloads/cdr-viewer.apk", (_req: Request, res: Response) => {
+    const apkPath = path.resolve(import.meta.dirname, "..", "cdr-viewer.apk");
+
+    if (!fs.existsSync(apkPath)) {
+      return res.status(404).json({ message: "APK file not found" });
+    }
+
+    return res.download(apkPath, "cdr-viewer.apk");
+  });
+
   // API route for contact form submission
   app.post("/api/contact", async (req: Request, res: Response) => {
     try {
