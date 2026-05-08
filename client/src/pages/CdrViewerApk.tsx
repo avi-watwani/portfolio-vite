@@ -11,7 +11,7 @@ export default function CdrViewerApk() {
 
         <div className="mt-8">
           <Button asChild size="lg">
-            <a href="/downloads/cdr-viewer.apk" download>
+            <a href="/cdr-viewer.apk" download>
               Download cdr-viewer.apk
             </a>
           </Button>
