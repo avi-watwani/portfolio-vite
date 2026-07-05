@@ -29,6 +29,59 @@ export default function Experience() {
               </div>
               <div className="bg-white dark:bg-slate-800 rounded-xl shadow-xl p-6 md:p-8">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                  <h3 className="text-xl md:text-2xl font-bold">Freelance Software Engineer</h3>
+                  <div className="flex items-center mt-2 md:mt-0">
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
+                      November 2025 - Present
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col md:flex-row md:items-center text-slate-600 dark:text-slate-400 mb-6">
+                  <div className="flex items-center mb-2 md:mb-0">
+                    <BuildingIcon className="mr-2 h-4 w-4" />
+                    <span className="font-medium">Independent</span>
+                  </div>
+                </div>
+                <ul className="space-y-2 ml-6 list-disc text-slate-700 dark:text-slate-300">
+                  <li>
+                    Built and launched full-stack e-commerce platforms for retail clients, including catalog, cart, checkout, and Razorpay payment integration
+                  </li>
+                  <li>
+                    Own client engagement from requirements gathering through deployment and post-launch support
+                  </li>
+                  <li>
+                    Provide ongoing engineering for Gems inventory management software on a monthly contract — feature development, bug fixes, and production maintenance
+                  </li>
+                  <li>
+                    Deploy and manage applications across Firebase, PostgreSQL, MongoDB, and GCP
+                  </li>
+                </ul>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">Node.js</span>
+                  <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">Rust</span>
+                  <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">Next.js</span>
+                  <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">Vite</span>
+                  <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                  <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">Firebase</span>
+                  <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                  <span className="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded-full text-sm">GCP</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Experience Item 2 */}
+            <motion.div 
+              className="mb-16 md:ml-12 relative"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <div className="absolute -left-14 md:-left-12 top-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                <BriefcaseIcon className="text-white h-4 w-4" />
+              </div>
+              <div className="bg-white dark:bg-slate-800 rounded-xl shadow-xl p-6 md:p-8">
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <h3 className="text-xl md:text-2xl font-bold">Software Engineer</h3>
                   <div className="flex items-center mt-2 md:mt-0">
                     <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">

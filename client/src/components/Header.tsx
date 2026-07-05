@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/ThemeProvider";
-import { Link } from "wouter";
 import { MoonIcon, SunIcon, MenuIcon, XIcon } from "lucide-react";
+import { scrollToSection } from "@/lib/scroll-to-section";
 
 export default function Header() {
   const { theme, setTheme } = useTheme();
@@ -14,6 +14,7 @@ export default function Header() {
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
     { label: "Experience", href: "#experience" },
+    { label: "Client Work", href: "#client-work" },
     { label: "Projects", href: "#projects" },
     { label: "Certifications", href: "#certifications" },
     { label: "Contact", href: "#contact" }
@@ -35,32 +36,9 @@ export default function Header() {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-  const scrollToSection = (sectionId: string) => {
+  const handleNavClick = (href: string) => {
     setMobileMenuOpen(false);
-    const element = document.querySelector(sectionId);
-    if (element) {
-      // Sections already have top padding (e.g. `py-20` / `pt-20`), so subtracting a fixed
-      // header offset can create either too much or too little gap depending on layout.
-      // We compute a dynamic offset that:
-      // - accounts for the actual header height
-      // - accounts for the section's own padding-top
-      // - leaves a small intentional gap below the header
-      const headerEl = document.querySelector("header");
-      const headerHeight = headerEl?.getBoundingClientRect().height ?? 0;
-      const sectionPaddingTop =
-        Number.parseFloat(getComputedStyle(element).paddingTop) || 0;
-      const DESIRED_GAP_PX = 24;
-      const scrollOffset = Math.max(
-        0,
-        headerHeight + DESIRED_GAP_PX - sectionPaddingTop,
-      );
-      const offsetTop =
-        element.getBoundingClientRect().top + window.pageYOffset - scrollOffset;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth"
-      });
-    }
+    scrollToSection(href);
   };
 
   return (
@@ -79,7 +57,7 @@ export default function Header() {
               className="hover:text-primary transition-colors"
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection(link.href);
+                handleNavClick(link.href);
               }}
             >
               {link.label}
@@ -99,7 +77,7 @@ export default function Header() {
           
           <Button
             className="bg-primary text-white hover:bg-blue-600 transition-colors hidden md:flex"
-            onClick={() => scrollToSection("#contact")}
+            onClick={() => handleNavClick("#contact")}
           >
             Get in Touch
           </Button>
@@ -125,7 +103,7 @@ export default function Header() {
               className="hover:text-primary transition-colors"
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection(link.href);
+                handleNavClick(link.href);
               }}
             >
               {link.label}
@@ -133,7 +111,7 @@ export default function Header() {
           ))}
           <Button
             className="bg-primary text-white hover:bg-blue-600 transition-colors w-full justify-center"
-            onClick={() => scrollToSection("#contact")}
+            onClick={() => handleNavClick("#contact")}
           >
             Get in Touch
           </Button>

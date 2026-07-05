@@ -84,6 +84,7 @@
   }
   section {
     @apply py-20;
+    scroll-margin-top: 2rem;
   }
 }
 

@@ -1,31 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { FaLinkedin } from "react-icons/fa";
+import { scrollToSection } from "@/lib/scroll-to-section";
 
 export default function Hero() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.querySelector(sectionId);
-    if (element) {
-      // Keep consistent with header navigation behavior: account for the header height and
-      // section padding-top, while leaving a small intentional gap below the header.
-      const headerEl = document.querySelector("header");
-      const headerHeight = headerEl?.getBoundingClientRect().height ?? 0;
-      const sectionPaddingTop =
-        Number.parseFloat(getComputedStyle(element).paddingTop) || 0;
-      const DESIRED_GAP_PX = 24;
-      const scrollOffset = Math.max(
-        0,
-        headerHeight + DESIRED_GAP_PX - sectionPaddingTop,
-      );
-      const offsetTop =
-        element.getBoundingClientRect().top + window.pageYOffset - scrollOffset;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <section id="home" className="min-h-screen flex items-center pt-20">
       <div className="container mx-auto px-6 py-16 md:py-24">
