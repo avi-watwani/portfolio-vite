@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import CdrViewerPageShell from "@/components/CdrViewerPageShell";
+import { CDR_VIEWER_APK_URL } from "@/lib/cdr-viewer";
 
 export default function Downloads() {
   return (
@@ -15,7 +16,7 @@ export default function Downloads() {
         </p>
         <div>
           <Button asChild size="lg" className="bg-primary text-white hover:bg-blue-600">
-            <a href="/cdr-viewer.apk" download="cdr-viewer.apk">
+            <a href={CDR_VIEWER_APK_URL} rel="noopener noreferrer">
               Download cdr-viewer.apk
             </a>
           </Button>

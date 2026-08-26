@@ -4,3 +4,6 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+
+# Large Android builds — serve from GitHub Releases instead
+client/public/*.apk
