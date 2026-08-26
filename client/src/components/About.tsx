@@ -1,8 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { LaptopIcon, BrainIcon, UsersIcon } from "lucide-react";
+import { yearsAgoInWords } from "@/lib/time-in-words";
+
+const CAREER_START_YEAR = 2022;
 
 export default function About() {
+  const yearsAgo = yearsAgoInWords(CAREER_START_YEAR);
+
   return (
     <section id="about" className="py-20 bg-slate-100 dark:bg-slate-800/50">
       <div className="container mx-auto px-6">
@@ -22,7 +27,8 @@ export default function About() {
             <div className="bg-white dark:bg-slate-800 rounded-xl shadow-xl p-8 transform transition duration-500 hover:scale-105">
               <h3 className="text-2xl font-bold mb-4">My Journey</h3>
               <p className="mb-4">
-                It began over three years ago at an e-learning startup, HowNow Technologies, where I dove headfirst into the world of backend development. What started as curiosity soon became passion for building systems that power real learning experiences.              </p>
+                It began {yearsAgo} at an e-learning startup, HowNow Technologies, where I dove headfirst into the world of backend development. What started as curiosity soon became passion for building systems that power real learning experiences.
+              </p>
               <p className="mb-6">
                 Through countless lines of code and late-night debugging, I grew into a developer who loves solving problems and shaping ideas into scalable, reliable systems. Along the way, I've built a strong foundation in Ruby on Rails, Node.js, Python, MySQL, MongoDB, and AWS, and discovered that growth isn't just about writing better code, it's about learning, unlearning, and building with purpose.              </p>
               <div className="mt-6">

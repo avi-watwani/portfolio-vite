@@ -7,16 +7,19 @@ export default function Projects() {
   const projectsData = [
     {
       title: "CDR Viewer",
-      description: "Android app for viewing CDR files on mobile with export to PDF and JPG — clean, ad-free experience.",
-      category: "Android Application",
+      description: "Mobile app for viewing CorelDRAW .cdr files on iOS and Android, with export to PDF and JPG — clean, ad-free experience.",
+      category: "Mobile Application",
       image: (
         <div className="w-full h-full bg-gradient-to-r from-green-600 to-emerald-700 flex items-center justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-white -mt-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-          </svg>
+          <img
+            src="/cdr-logo.png"
+            alt="CDR Viewer"
+            className="h-20 w-20 rounded-2xl shadow-lg -mt-8 object-cover"
+          />
         </div>
       ),
       skills: [
+        { name: "iOS", type: "tech" as const },
         { name: "Android", type: "tech" as const },
         { name: "Expo", type: "framework" as const },
         { name: "React Native", type: "framework" as const },

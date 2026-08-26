@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/ThemeProvider";
 import { MoonIcon, SunIcon, MenuIcon, XIcon } from "lucide-react";
-import { scrollToSection } from "@/lib/scroll-to-section";
+import { goToHomeSection } from "@/lib/scroll-to-section";
 
 export default function Header() {
   const { theme, setTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [, setLocation] = useLocation();
 
   const navLinks = [
     { label: "Home", href: "#home" },
@@ -38,13 +40,20 @@ export default function Header() {
 
   const handleNavClick = (href: string) => {
     setMobileMenuOpen(false);
-    scrollToSection(href);
+    goToHomeSection(href, () => setLocation("/"));
   };
 
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm shadow-sm' : 'bg-transparent'}`}>
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#home" className="text-2xl font-bold">
+        <a
+          href="/#home"
+          className="text-2xl font-bold"
+          onClick={(e) => {
+            e.preventDefault();
+            handleNavClick("#home");
+          }}
+        >
           <span className="text-slate-800 dark:text-white">Avi</span>
           <span className="text-primary">Watwani</span>
         </a>
@@ -53,7 +62,7 @@ export default function Header() {
           {navLinks.map((link) => (
             <a 
               key={link.href}
-              href={link.href}
+              href={`/${link.href}`}
               className="hover:text-primary transition-colors"
               onClick={(e) => {
                 e.preventDefault();
@@ -99,7 +108,7 @@ export default function Header() {
           {navLinks.map((link) => (
             <a 
               key={link.href}
-              href={link.href}
+              href={`/${link.href}`}
               className="hover:text-primary transition-colors"
               onClick={(e) => {
                 e.preventDefault();

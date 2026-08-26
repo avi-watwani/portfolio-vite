@@ -1,5 +1,10 @@
+import { Link } from "wouter";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+
+function isInternalPath(href: string) {
+  return href.startsWith("/") && !href.startsWith("//");
+}
 
 interface ProjectCardProps {
   title: string;
@@ -62,14 +67,23 @@ export default function ProjectCard({
             </a>
           )}
           {links?.live && (
-            <a 
-              href={links.live} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-primary hover:text-primary/80 font-medium flex items-center"
-            >
-              <FaExternalLinkAlt className="mr-1" /> Live
-            </a>
+            isInternalPath(links.live) ? (
+              <Link
+                href={links.live}
+                className="text-primary hover:text-primary/80 font-medium flex items-center"
+              >
+                <FaExternalLinkAlt className="mr-1" /> Live
+              </Link>
+            ) : (
+              <a
+                href={links.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 font-medium flex items-center"
+              >
+                <FaExternalLinkAlt className="mr-1" /> Live
+              </a>
+            )
           )}
         </div>
       </div>

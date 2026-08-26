@@ -1,8 +1,13 @@
+import { useLocation } from "wouter";
+import type { MouseEvent } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { ArrowUpIcon } from "lucide-react";
+import { goToHomeSection } from "@/lib/scroll-to-section";
 
 export default function Footer() {
+  const [, setLocation] = useLocation();
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -10,12 +15,21 @@ export default function Footer() {
     });
   };
 
+  const goHome = (e: MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    goToHomeSection("#home", () => setLocation("/"));
+  };
+
   return (
     <footer className="bg-slate-800 text-white py-10">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <a href="#home" className="text-2xl font-bold text-white">
+            <a
+              href="/#home"
+              className="text-2xl font-bold text-white"
+              onClick={goHome}
+            >
               <span className="text-primary">Avi</span>Watwani
             </a>
             <p className="mt-2 text-slate-400">Software Engineer & AWS Certified Developer</p>
