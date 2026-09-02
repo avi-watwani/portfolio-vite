@@ -10,6 +10,7 @@ import CdrViewerPrivacy from "@/pages/CdrViewerPrivacy";
 import Downloads from "@/pages/Downloads";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 function Router() {
@@ -29,6 +30,7 @@ function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
       <TooltipProvider>
+        <ScrollToTop />
         <Header />
         <Router />
         <Footer />

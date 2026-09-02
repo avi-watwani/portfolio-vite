@@ -21,7 +21,7 @@ export default function CdrViewerPageShell({
           {!showLogo ? (
             <p className="text-sm font-medium text-primary">
               <Link href="/cdr-viewer" className="hover:underline">
-                CDR Viewer
+                CDR View
               </Link>
             </p>
           ) : null}
@@ -29,7 +29,7 @@ export default function CdrViewerPageShell({
             {showLogo ? (
               <img
                 src="/cdr-logo.png"
-                alt="CDR Viewer"
+                alt="CDR View"
                 width={48}
                 height={48}
                 className="h-10 w-10 shrink-0 rounded-xl shadow-sm md:h-12 md:w-12"

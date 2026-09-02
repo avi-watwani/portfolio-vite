@@ -6,7 +6,7 @@ export default function Downloads() {
   return (
     <CdrViewerPageShell
       title="Downloads"
-      subtitle="Get the latest Android build of CDR Viewer for direct install."
+      subtitle="Get the latest Android build of CDR View for direct install."
     >
       <section className="space-y-4 md:col-span-2 xl:col-span-3">
         <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Android APK</h2>

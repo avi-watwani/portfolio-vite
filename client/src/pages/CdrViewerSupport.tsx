@@ -7,7 +7,7 @@ export default function CdrViewerSupport() {
   return (
     <CdrViewerPageShell
       title="Support"
-      subtitle="Get help with CDR Viewer — opening files, conversion, and exports."
+      subtitle="Get help with CDR View — opening files, conversion, and exports."
     >
       <section className="space-y-3">
         <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Contact</h2>
@@ -42,7 +42,7 @@ export default function CdrViewerSupport() {
             <p>
               In the app, use the file picker to select a <code className="text-sm">.cdr</code> file from
               Files or Downloads. On iOS and Android you can also open a{" "}
-              <code className="text-sm">.cdr</code> file with CDR Viewer from the share sheet or Files app
+              <code className="text-sm">.cdr</code> file with CDR View from the share sheet or Files app
               when the app is installed.
             </p>
           </div>

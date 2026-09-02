@@ -4,14 +4,14 @@ import CdrViewerPageShell from "@/components/CdrViewerPageShell";
 export default function CdrViewer() {
   return (
     <CdrViewerPageShell
-      title="CDR Viewer"
+      title="CDR View"
       subtitle="Open CorelDRAW .cdr files on your phone, preview them, and export to JPG or PDF — without installing CorelDRAW."
       showLogo
     >
       <section className="space-y-3 xl:col-span-2">
         <h2 className="text-xl font-semibold text-slate-900 dark:text-white">What it does</h2>
         <p>
-          CDR Viewer lets you pick a <code className="text-sm">.cdr</code> file from Files or open one
+          CDR View lets you pick a <code className="text-sm">.cdr</code> file from Files or open one
           shared into the app. It converts the file so you can preview the design on your device, then
           export or share a JPG or PDF when you need to send it to a client or print shop.
         </p>

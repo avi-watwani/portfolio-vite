@@ -12,7 +12,7 @@ export default function CdrViewerPrivacy() {
       <section className="space-y-3 md:col-span-2 xl:col-span-2">
         <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Overview</h2>
         <p>
-          CDR Viewer (&quot;the app&quot;) is provided by Avi Watwani. This policy explains what
+          CDR View (&quot;the app&quot;) is provided by Avi Watwani. This policy explains what
           information is handled when you use the app. We do not require accounts, do not show ads, and
           do not use third-party advertising or analytics tracking SDKs in the app.
         </p>
