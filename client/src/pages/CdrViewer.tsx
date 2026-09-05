@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import CdrViewerPageShell from "@/components/CdrViewerPageShell";
+import { CDR_VIEWER_APP_STORE_URL } from "@/lib/cdr-viewer";
 
 export default function CdrViewer() {
   return (
@@ -20,7 +21,16 @@ export default function CdrViewer() {
       <section className="space-y-2">
         <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Download</h2>
         <p>
-          Android users can get the APK from{" "}
+          Available on the{" "}
+          <a
+            href={CDR_VIEWER_APP_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline"
+          >
+            App Store
+          </a>
+          . Android users can also get the APK from{" "}
           <Link href="/cdr-viewer/downloads" className="text-primary hover:underline">
             Downloads
           </Link>

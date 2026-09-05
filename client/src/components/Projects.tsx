@@ -2,6 +2,7 @@ import ProjectCard from "./ProjectCard";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { FaCodeBranch } from "react-icons/fa";
+import { CDR_VIEWER_APP_STORE_URL } from "@/lib/cdr-viewer";
 
 export default function Projects() {
   const projectsData = [
@@ -26,7 +27,8 @@ export default function Projects() {
         { name: "TypeScript", type: "language" as const },
       ],
       links: {
-        live: "/cdr-viewer"
+        live: CDR_VIEWER_APP_STORE_URL,
+        liveLabel: "App Store",
       }
     },
     {

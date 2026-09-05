@@ -15,6 +15,7 @@ interface ProjectCardProps {
   links: {
     github?: string;
     live?: string;
+    liveLabel?: string;
   };
 }
 
@@ -72,7 +73,7 @@ export default function ProjectCard({
                 href={links.live}
                 className="text-primary hover:text-primary/80 font-medium flex items-center"
               >
-                <FaExternalLinkAlt className="mr-1" /> Live
+                <FaExternalLinkAlt className="mr-1" /> {links.liveLabel ?? "Live"}
               </Link>
             ) : (
               <a
@@ -81,7 +82,7 @@ export default function ProjectCard({
                 rel="noopener noreferrer"
                 className="text-primary hover:text-primary/80 font-medium flex items-center"
               >
-                <FaExternalLinkAlt className="mr-1" /> Live
+                <FaExternalLinkAlt className="mr-1" /> {links.liveLabel ?? "Live"}
               </a>
             )
           )}
