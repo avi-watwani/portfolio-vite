@@ -1,6 +1,6 @@
-/** Latest APK asset on the portfolio GitHub Releases page. */
+/** Android APK on the portfolio GitHub Releases page. */
 export const CDR_VIEWER_APK_URL =
-  "https://github.com/avi-watwani/portfolio-vite/releases/latest/download/cdr-viewer.apk";
+  "https://github.com/avi-watwani/portfolio-vite/releases/download/cdr-viewer-v1.0.0/cdr-viewer.apk";
 
 /** CDR View on the Apple App Store. */
 export const CDR_VIEWER_APP_STORE_URL =

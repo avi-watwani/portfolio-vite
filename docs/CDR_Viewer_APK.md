@@ -2,16 +2,17 @@
 
 The Android APK is **not** stored in this repo (too large for git). It is published as a [GitHub Release](https://github.com/avi-watwani/portfolio-vite/releases) asset named `cdr-viewer.apk`.
 
-The Downloads page links to the latest asset:
+The Downloads page links to a **tag-specific** asset (not `/releases/latest/`), so a newer Vyapro (or other) release does not break this URL:
 
-`https://github.com/avi-watwani/portfolio-vite/releases/latest/download/cdr-viewer.apk`
+`https://github.com/avi-watwani/portfolio-vite/releases/download/cdr-viewer-v1.0.0/cdr-viewer.apk`
 
 Defined in `client/src/lib/cdr-viewer.ts` as `CDR_VIEWER_APK_URL`.
 
 ## To ship a new APK later
 
 1. Build the APK in the [cdr-viewer](https://github.com/avi-watwani/cdr-viewer) app (output is typically under `dist/`, e.g. `cdr-viewer-preview.apk`).
-2. Publish a new release on **this** repo. Keep the uploaded asset name exactly `cdr-viewer.apk` so the site URL does not need a code change:
+2. Publish a new release on **this** repo. Keep the uploaded asset name exactly `cdr-viewer.apk`.
+3. Update `CDR_VIEWER_APK_URL` in `client/src/lib/cdr-viewer.ts` to the new tag path.
 
 ```bash
 gh release create cdr-viewer-v1.0.1 \
@@ -31,7 +32,7 @@ gh release create cdr-viewer-v1.0.1 \
   --notes "Android APK for CDR Viewer direct install."
 ```
 
-Bump the tag / title for each release (`cdr-viewer-v1.0.2`, etc.).
+Bump the tag / title for each release (`cdr-viewer-v1.0.2`, etc.), then point `CDR_VIEWER_APK_URL` at that tag.
 
 ## Local-only copy (optional)
 

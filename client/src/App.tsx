@@ -8,6 +8,10 @@ import CdrViewer from "@/pages/CdrViewer";
 import CdrViewerSupport from "@/pages/CdrViewerSupport";
 import CdrViewerPrivacy from "@/pages/CdrViewerPrivacy";
 import Downloads from "@/pages/Downloads";
+import Vyapro from "@/pages/Vyapro";
+import VyaproDownloads from "@/pages/VyaproDownloads";
+import VyaproSupport from "@/pages/VyaproSupport";
+import VyaproPrivacy from "@/pages/VyaproPrivacy";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -21,6 +25,10 @@ function Router() {
       <Route path="/cdr-viewer/privacy" component={CdrViewerPrivacy} />
       <Route path="/cdr-viewer/downloads" component={Downloads} />
       <Route path="/cdr-viewer" component={CdrViewer} />
+      <Route path="/vyapro/support" component={VyaproSupport} />
+      <Route path="/vyapro/privacy" component={VyaproPrivacy} />
+      <Route path="/vyapro/downloads" component={VyaproDownloads} />
+      <Route path="/vyapro" component={Vyapro} />
       <Route component={NotFound} />
     </Switch>
   );

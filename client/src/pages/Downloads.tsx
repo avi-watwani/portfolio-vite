@@ -37,7 +37,8 @@ export default function Downloads() {
           </Button>
         </div>
         <p className="text-sm text-muted-foreground">
-          Prefer the Play Store listing when available. This APK is for direct install on Android devices.
+          Prefer the Play Store listing when available. This APK is served from GitHub Releases for
+          direct install on Android devices.
         </p>
       </section>
     </CdrViewerPageShell>

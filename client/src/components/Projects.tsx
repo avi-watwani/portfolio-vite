@@ -7,6 +7,32 @@ import { CDR_VIEWER_APP_STORE_URL } from "@/lib/cdr-viewer";
 export default function Projects() {
   const projectsData = [
     {
+      title: "Vyapro",
+      description:
+        "Mobile-first GST billing, inventory, and books for Indian SMBs — invoices, parties, stock, receivables, and reports from your phone.",
+      category: "Mobile Application",
+      image: (
+        <div className="w-full h-full bg-gradient-to-r from-teal-600 to-cyan-800 flex items-center justify-center">
+          <img
+            src="/vyapro-logo.png"
+            alt="Vyapro"
+            className="h-20 w-20 rounded-2xl shadow-lg -mt-8 object-cover"
+          />
+        </div>
+      ),
+      skills: [
+        { name: "Android", type: "tech" as const },
+        { name: "Expo", type: "framework" as const },
+        { name: "React Native", type: "framework" as const },
+        { name: "Firebase", type: "tech" as const },
+        { name: "TypeScript", type: "language" as const },
+      ],
+      links: {
+        live: "/vyapro",
+        liveLabel: "Project page",
+      },
+    },
+    {
       title: "CDR View",
       description: "Mobile app for viewing CorelDRAW .cdr files on iOS and Android, with export to PDF and JPG — clean, ad-free experience.",
       category: "Mobile Application",
