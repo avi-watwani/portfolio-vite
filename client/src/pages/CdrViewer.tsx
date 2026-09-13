@@ -46,7 +46,7 @@ export default function CdrViewer() {
         </p>
       </section>
 
-      <div className="grid grid-cols-1 gap-5 md:col-span-2 md:grid-cols-2 md:gap-6 xl:col-span-3 xl:gap-8">
+      <div className="grid grid-cols-1 gap-6 md:col-span-2 md:grid-cols-2 xl:col-span-3 xl:gap-8">
         <section className="space-y-2">
           <h2 className="text-xl font-semibold text-slate-900 dark:text-white">How it works</h2>
           <ol className="list-decimal space-y-2 pl-5">

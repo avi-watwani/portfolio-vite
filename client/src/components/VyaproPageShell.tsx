@@ -15,9 +15,9 @@ export default function VyaproPageShell({
   children,
 }: VyaproPageShellProps) {
   return (
-    <main className="px-6 pt-28 pb-8">
+    <main className="px-6 pt-32 pb-16 md:pt-36 md:pb-20">
       <article className="container mx-auto w-full">
-        <header>
+        <header className="space-y-3 md:space-y-4">
           {!showLogo ? (
             <p className="text-sm font-medium text-primary">
               <Link href="/vyapro" className="hover:underline">
@@ -25,7 +25,7 @@ export default function VyaproPageShell({
               </Link>
             </p>
           ) : null}
-          <div className={`${showLogo ? "" : "mt-2 "}flex items-center gap-3 md:gap-4`}>
+          <div className="flex items-center gap-3 md:gap-4">
             {showLogo ? (
               <img
                 src="/vyapro-logo.png"
@@ -40,32 +40,26 @@ export default function VyaproPageShell({
             </h1>
           </div>
           {subtitle ? (
-            <p className="mt-4 text-base text-muted-foreground leading-relaxed md:text-lg">
+            <p className="text-base text-muted-foreground leading-relaxed md:text-lg">
               {subtitle}
             </p>
           ) : null}
         </header>
 
-        {/*
-          Global CSS applies `py-20` to every `section`; reset it here.
-          Mid/large screens use a multi-column grid so content fills the viewport width.
-        */}
+        {/* Card chrome for child sections; `p-*` overrides global `section { py-20 }`. */}
         <div
           className={[
-            "mt-10 grid grid-cols-1 gap-5 text-slate-700 dark:text-slate-300 leading-relaxed",
-            "md:grid-cols-2 md:gap-6",
+            "mt-8 grid grid-cols-1 gap-6 text-slate-700 dark:text-slate-300 leading-relaxed",
+            "md:mt-10 md:grid-cols-2 md:gap-6",
             "xl:grid-cols-3 xl:gap-8",
-            "[&_section]:py-0",
             "[&_section]:rounded-xl",
             "[&_section]:border",
             "[&_section]:border-slate-200",
             "dark:[&_section]:border-slate-700",
             "[&_section]:bg-white",
             "dark:[&_section]:bg-slate-800/60",
-            "[&_section]:p-5",
-            "md:[&_section]:p-6",
+            "[&_section]:p-6",
             "lg:[&_section]:p-8",
-            "[&_section]:space-y-3",
           ].join(" ")}
         >
           {children}
