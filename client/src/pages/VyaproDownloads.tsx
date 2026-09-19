@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import VyaproPageShell from "@/components/VyaproPageShell";
-import { VYAPRO_APK_URL } from "@/lib/vyapro";
+import { VYAPRO_APK_URL, VYAPRO_APK_VERSION } from "@/lib/vyapro";
 
 export default function VyaproDownloads() {
   return (
@@ -9,7 +9,12 @@ export default function VyaproDownloads() {
       subtitle="Install Vyapro on Android today. iOS is on the way."
     >
       <section className="space-y-4">
-        <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Android APK</h2>
+        <h2 className="text-xl font-semibold text-slate-900 dark:text-white">
+          Android APK{" "}
+          <span className="text-base font-medium text-muted-foreground">
+            v{VYAPRO_APK_VERSION}
+          </span>
+        </h2>
         <p>
           Download the Android build below, then open the file on your device to install. You may need to
           allow installs from this browser or unknown sources.
@@ -22,8 +27,8 @@ export default function VyaproDownloads() {
           </Button>
         </div>
         <p className="text-sm text-muted-foreground">
-          Prefer the Play Store listing when available. This APK is served from GitHub Releases for
-          direct install on Android devices.
+          Current version {VYAPRO_APK_VERSION}. Prefer the Play Store listing when available. This APK
+          is served from GitHub Releases for direct install on Android devices.
         </p>
       </section>
 
