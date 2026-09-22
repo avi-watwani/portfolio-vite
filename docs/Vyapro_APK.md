@@ -4,7 +4,7 @@ The Android APK is **not** stored in this repo (too large for git). It is publis
 
 The Downloads page links to a **tag-specific** asset:
 
-`https://github.com/avi-watwani/portfolio-vite/releases/download/vyapro-v1.0.4/vyapro.apk`
+`https://github.com/avi-watwani/portfolio-vite/releases/download/vyapro-v1.0.5/vyapro.apk`
 
 Defined in `client/src/lib/vyapro.ts` as `VYAPRO_APK_URL` / `VYAPRO_APK_VERSION`.
 
@@ -15,14 +15,14 @@ Defined in `client/src/lib/vyapro.ts` as `VYAPRO_APK_URL` / `VYAPRO_APK_VERSION`
 3. Bump `VYAPRO_APK_VERSION` in `client/src/lib/vyapro.ts` to the new tag.
 
 ```bash
-gh release create vyapro-v1.0.5 \
-  /path/to/your-build.apk#vyapro.apk \
+gh release create vyapro-v1.0.6 \
+  /tmp/vyapro.apk \
   --repo avi-watwani/portfolio-vite \
-  --title "Vyapro Android APK v1.0.5" \
+  --title "Vyapro Android APK v1.0.6" \
   --notes "Android APK for Vyapro direct install."
 ```
 
-Bump the tag / title for each release (`vyapro-v1.0.5`, etc.), then point `VYAPRO_APK_VERSION` at that tag.
+Bump the tag / title for each release (`vyapro-v1.0.6`, etc.), then point `VYAPRO_APK_VERSION` at that tag.
 
 ## Local-only copy (optional)
 
