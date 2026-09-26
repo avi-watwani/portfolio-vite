@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/cdr-viewer/sample-file",
+      "destination": "https://github.com/avi-watwani/portfolio-vite/releases/download/cdr-viewer-v1.0.0/sample.cdr",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!.*\\..*).*)",

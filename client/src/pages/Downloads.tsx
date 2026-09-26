@@ -41,6 +41,18 @@ export default function Downloads() {
           direct install on Android devices.
         </p>
       </section>
+
+      <section className="space-y-4 md:col-span-2 xl:col-span-3">
+        <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Sample .cdr file</h2>
+        <p>
+          Testers can download a sample CorelDRAW file to try opening and exporting in the app.
+        </p>
+        <div>
+          <Button asChild size="lg" variant="outline">
+            <a href="/cdr-viewer/sample-file">Download sample.cdr</a>
+          </Button>
+        </div>
+      </section>
     </CdrViewerPageShell>
   );
 }
