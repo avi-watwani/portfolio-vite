@@ -1,3 +1,5 @@
+export const CAREER_START_YEAR = 2022;
+
 const NUMBER_WORDS = [
   "zero",
   "one",
@@ -31,14 +33,24 @@ export function numberToWords(n: number): string {
 }
 
 /**
+ * Returns elapsed years since startYear (defaults to CAREER_START_YEAR).
+ */
+export function getYearsOfExperience(
+  startYear: number = CAREER_START_YEAR,
+  referenceYear: number = new Date().getFullYear(),
+): number {
+  return Math.max(0, referenceYear - startYear);
+}
+
+/**
  * Returns a relative phrase like "four years ago" based on
  * `currentYear - startYear` (defaults to the current calendar year).
  */
 export function yearsAgoInWords(
-  startYear: number,
+  startYear: number = CAREER_START_YEAR,
   referenceYear: number = new Date().getFullYear(),
 ): string {
-  const years = Math.max(0, referenceYear - startYear);
+  const years = getYearsOfExperience(startYear, referenceYear);
 
   if (years === 0) return "this year";
   if (years === 1) return "one year ago";

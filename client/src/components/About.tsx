@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { LaptopIcon, BrainIcon, UsersIcon } from "lucide-react";
-import { yearsAgoInWords } from "@/lib/time-in-words";
-
-const CAREER_START_YEAR = 2022;
+import { CAREER_START_YEAR, yearsAgoInWords } from "@/lib/time-in-words";
 
 export default function About() {
   const yearsAgo = yearsAgoInWords(CAREER_START_YEAR);

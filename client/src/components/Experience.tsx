@@ -1,7 +1,10 @@
 import { BriefcaseIcon, GraduationCapIcon, BuildingIcon, CalendarIcon } from "lucide-react";
 import { motion } from "framer-motion";
+import { CAREER_START_YEAR, getYearsOfExperience } from "@/lib/time-in-words";
 
 export default function Experience() {
+  const yearsOfExperience = getYearsOfExperience(CAREER_START_YEAR);
+
   return (
     <section id="experience" className="py-20 bg-slate-100 dark:bg-slate-800/50">
       <div className="container mx-auto px-6">
@@ -9,7 +12,7 @@ export default function Experience() {
           <h2 className="section-heading">Work Experience</h2>
           <div className="section-divider"></div>
           <p className="section-description">
-            My professional journey as a software engineer spanning over 3 years.
+            My professional journey as a software engineer spanning over {yearsOfExperience} years.
           </p>
         </div>
 

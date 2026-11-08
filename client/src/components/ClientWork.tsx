@@ -9,62 +9,21 @@ export default function ClientWork() {
       category: "E-Commerce Platform",
       image: (
         <div className="w-full h-full bg-gradient-to-r from-teal-600 to-cyan-700 flex items-center justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-16 w-16 text-white -mt-8"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={1.8}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 4v16m8-8H4"
-            />
-          </svg>
+          <img
+            src="/pulseone-logo.png"
+            alt="PulseOne Pharmacy Store"
+            className="h-16 w-16 -mt-8 object-contain drop-shadow"
+          />
         </div>
       ),
       skills: [
+        { name: "React", type: "framework" as const },
+        { name: "Firebase", type: "tech" as const },
+        { name: "Tailwind CSS", type: "framework" as const },
         { name: "E-Commerce", type: "tech" as const },
-        { name: "Next.js", type: "framework" as const },
-        { name: "Payments", type: "tech" as const },
       ],
       links: {
         live: "https://pulseone.co.in",
-      },
-    },
-    {
-      title: "KOKO Coffee Roasters",
-      description:
-        "Built a full-stack e-commerce platform for a coffee brand using Next.js and Firebase, integrating Razorpay for payments.",
-      category: "E-Commerce Platform",
-      image: (
-        <div className="w-full h-full bg-gradient-to-r from-amber-600 to-amber-800 flex items-center justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-16 w-16 text-white -mt-8"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-            />
-          </svg>
-        </div>
-      ),
-      skills: [
-        { name: "Next.js", type: "framework" as const },
-        { name: "Firebase", type: "tech" as const },
-        { name: "Razorpay", type: "tech" as const },
-        { name: "AWS Lambda", type: "tech" as const },
-      ],
-      links: {
-        live: "https://kokocoffeeroasters.in",
       },
     }
   ];
@@ -80,7 +39,7 @@ export default function ClientWork() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className={`grid grid-cols-1 ${clientProjects.length > 1 ? "md:grid-cols-2 max-w-5xl" : "max-w-xl"} gap-8 mx-auto`}>
           {clientProjects.map((project, index) => (
             <ProjectCard
               key={index}
